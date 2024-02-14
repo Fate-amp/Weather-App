@@ -41,7 +41,7 @@ function App() {
     setIsLoading(true);
   }
   return (
-    <div className='bg-slate-700 h-screen w-screen flex justify-center'>
+    <div className='bg-slate-700 h-screen w-screen m-0 p-0 flex justify-center'>
       <div className='customContainer h-fit w-2/6 rounded-2xl p-3 mt-20 flex-col'>
       <div className="flex h-14 m-5">
             <input value={searchBar} onChange={handleChange} placeholder="Enter City Name" type="text" className="bg-slate-200 focus:outline-none rounded-full w-4/5 mr-3 pl-5 text-xl placeholder-gray-500" />
