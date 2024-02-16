@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 body{
+  background-color: rgb(51 65 85);
   margin: 0px;
   padding: 0px;
-}
-body{
-  background-color: rgb(51 65 85);
 }
 .customContainer{
     background: linear-gradient(135deg,#00feba,#5b548a);
