@@ -7,6 +7,10 @@ body{
   margin: 0px;
   padding: 0px;
 }
+#root{
+  padding: 0px;
+  margin: 0px;
+}
 .customContainer{
     background: linear-gradient(135deg,#00feba,#5b548a);
 }
