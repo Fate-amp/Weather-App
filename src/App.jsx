@@ -1,6 +1,5 @@
 import Indicator from './components/Indicator'
 import { CiSearch } from "react-icons/ci";
-import './App.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import WeatherIcon from './components/WeatherIcon';
@@ -52,9 +51,9 @@ function App() {
         {isLoading&& <Loader />}
        {data&& !isLoading &&
        <><WeatherIcon condition={data.weather[0].main} />
-        <h6 className='text-white text-l'>{data.weather[0].main}</h6>
-        <h6 className='text-white text-4xl font-bold'>{`${data.main.temp}°C`}</h6>
-        <h6 className='text-white text-2xl font-bold'>{data.name}</h6></> } 
+        <h6 className='text-white text-l text-center'>{data.weather[0].main}</h6>
+        <h6 className='text-white text-4xl font-bold text-center'>{`${data.main.temp}°C`}</h6>
+        <h6 className='text-white text-2xl font-bold text-center'>{data.name}</h6></> } 
         {error&& <h2 className='text-white'>Data not found!</h2>}
         {!isLoading && <Indicator windSpeed={data ? data.wind.speed : null} humidity={data ? data.main.humidity : null} />}
 
